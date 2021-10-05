@@ -45,7 +45,7 @@ class MotorcycleController extends Controller
 
         return redirect()->route('motorcycle:index')->with([
                 'alert-type' => 'alert-primary',
-                'alert' => 'New motorcycle has been add!'
+                'alert-message' => 'New motorcycle has been add!'
             ]);
     }
 
@@ -89,7 +89,7 @@ class MotorcycleController extends Controller
 
         return redirect()->route('motorcycle:index')->with([
                 'alert-type' => 'alert-primary',
-                'alert' => 'Motorcycle has been updated!'
+                'alert-message' => 'Motorcycle has been updated!'
             ]);
     }
 
@@ -105,8 +105,8 @@ class MotorcycleController extends Controller
         $motocycle->delete();
 
         return redirect()->route('motorcycle:index')->with([
-            'alert-type' => 'alert-primary',
-            'alert' => 'Motorcycle has been deleted!'
+            'alert-type' => 'alert-danger',
+            'alert-message' => 'Motorcycle has been deleted!'
         ]);
     }
 }
