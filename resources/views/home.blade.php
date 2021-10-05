@@ -16,6 +16,11 @@
 
                     {{ __('You are logged in!') }}
                 </div>
+
+                <div class="card-body">
+                    <a href={{ route('motorcycle:index') }}  type="button" class="btn btn-dark">Motorcycle</a>
+
+                </div>
             </div>
         </div>
     </div>
